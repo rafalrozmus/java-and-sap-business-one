@@ -2,6 +2,13 @@
  * A simple example on how to establish connection to SAP Business One
  */
 
+/*
+ * Import JCO libraries from DI API folder. Two files need to be added to your
+ * project libraries - sboapi.jar and sbowrapper.jar
+ * The files are usually located in:
+ * C:\Program Files (x86)\SAP\SAP Business One DI API\JCO\LIB - 32 bit build
+ * C:\Program Files\SAP\SAP Business One DI API\JCO\LIB - 64 bit build
+ */
 import com.sap.smb.sbo.api.*;
 
 /**
