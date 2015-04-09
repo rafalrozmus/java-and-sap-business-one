@@ -1,5 +1,6 @@
 /*
- * A simple example on how to establish connection to SAP Business One
+ * A simple example on how to establish connection to SAP Business One.
+ * For this program to work, you need SAP Business One DI API installed.
  */
 
 /*
