@@ -28,13 +28,13 @@ public class RecordsetExample {
     
     public static void main(String[] args) 
     {
-        RecordsetExample server = new RecordsetExample();
-        server.connect();
-        server.getBPList();
+        RecordsetExample sapConnection = new RecordsetExample();
+        sapConnection.connect();
+        sapConnection.getBPList();
         // check if connection has been established before disconnecting
-        if (server.getConnectionResult() == 0)
+        if (sapConnection.getConnectionResult() == 0)
         {
-            server.disconnect();
+            sapConnection.disconnect();
         }    
     }
     
