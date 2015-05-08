@@ -46,7 +46,7 @@ public class UnlockUser {
         {
             // initialise User object
             user = SBOCOMUtil.newUsers(company);
-            // get the user by its InternalKey (USERID in OUSR table)
+            // get the user by its InternalKey (INTERNAL_K in OUSR table)
             user.getByKey(40);
             // check if user is locked
             if (user.getLocked() == 1) {
