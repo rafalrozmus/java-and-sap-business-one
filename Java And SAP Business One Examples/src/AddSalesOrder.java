@@ -46,7 +46,7 @@ public class AddSalesOrder {
         {
             // initialise Documents object and set the document type to Sales
             // Order. 17 means Sales Order. For a list of Object Types check
-            // http://scn.sap.com/community/business-one/blog/2013/07/09/sap-business-one-form-types-and-object-types
+            // http://www.ggrenacher.ch/705/sap-business-one-form-types-and-object-types
             salesOrder = SBOCOMUtil.newDocuments(company, 17);
             // Set Business Partner
             salesOrder.setCardCode("ZZZ002");
