@@ -1,5 +1,5 @@
 /*
- * A simple example on how to use mark several AR Invoices as printed. 
+ * A simple example on how to mark several AR Invoices as printed. 
  * For this program to work, you need SAP Business One DI API installed.
  */
 
