@@ -106,6 +106,7 @@ public class AddPurchaseRequest {
      */
     public boolean connect() 
     {  
+        boolean isConnected = false;
         try 
         {
             // initialise company instance
@@ -138,7 +139,7 @@ public class AddPurchaseRequest {
             if (connectionResult == 0) 
             {
                 System.out.println("Successfully connected to " + company.getCompanyName());
-                return true;
+                isConnected = true;
             }
             // if connection failed
             else 
@@ -151,7 +152,7 @@ public class AddPurchaseRequest {
                         + " "
                         + errMsg.getErrorCode()
                 );
-                return false;
+                isConnected = false;
             }
         }
         catch (Exception e) 
@@ -159,6 +160,7 @@ public class AddPurchaseRequest {
             e.printStackTrace();
             connectionResult = -1;    
         }
+        return isConnected;
     }
     
     /**
